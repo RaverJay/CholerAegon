@@ -140,9 +140,8 @@ class SummaryReport():
             self.tabledata.columns.name = 'Sample'
             self.force_index_dtype_string(self.tabledata)
 
-            # TODO
-            # self.add_col_description(f'Missing values (\'<font color="{self.color_error_red}">.</font>\') denote cases where abricate did not find the gene.')
-            # self.tabledataraw = self.tabledata.copy()
+            self.add_col_description(f'Missing values (\'<font color="{self.color_error_red}">.</font>\') denote cases where the gene was not found.')
+
         else:
             for item in t_index:
                 assert item in self.tabledata.index, f'Index not found in existing table: {item}. Available: {self.tabledata.index}'
@@ -156,6 +155,9 @@ class SummaryReport():
         log('Setting a number range as table index ...')
         self.tabledata.index = pd.Series(range(1, self.tabledata.shape[0]+1))
         self.tabledata.columns.name = 'Assembly number'
+        self.predictiondata.index = pd.Series(range(1, self.tabledata.shape[0]+1))
+        self.predictiondata.columns.name = 'Assembly number'
+        
 
     
     def reorder_tablecolumns(self):
@@ -259,8 +261,12 @@ class SummaryReport():
             # for param, value in self.porecov_params.items():
             #     outfh.write(param + ': ' + value + '<br>\n')
 
+            # predictions table
+            outfh.write('\n\n<h2 class="header" id="table-header">Prediction results</h2>\n')
+            self.predictiondata.to_html(outfh, classes=['tablestyle'], escape=False, bold_rows=False)
+
             # results table
-            outfh.write('<h2 class="header" id="table-header">Sample results</h2>\n')
+            outfh.write('\n\n<h2 class="header" id="table-header">Gene detection results</h2>\n')
             self.write_html_table(outfh)
             self.write_column_descriptions(outfh)
 
@@ -275,13 +281,13 @@ class SummaryReport():
 
 
     def add_amr_results(self, amr_results):
-        log('Adding RGI results ...')
+        log('Adding prediction results ...')
 
         res_data = pd.read_csv(amr_results, index_col='#FILE', sep='\t', dtype={'#FILE': str})
         self.force_index_dtype_string(res_data)
 
-        # parsing
-        data = res_data.copy().drop('NUM_FOUND', axis=1)
+        # genes table
+        data = res_data.copy()
 
         assemblies = []
         assembly_types = []
@@ -324,84 +330,48 @@ class SummaryReport():
 
         # select columns
         cols_other = ['SAMPLE', 'ASSEMBLY_TYPE', 'NUM_FOUND']
-        cols_amr = [col for col in data.columns if col not in cols_other]
+        cols_pred = ['DRUG_RESISTANCES', 'DRUG_CLASS_RESISTANCES', 'WHO_SUGGESTED_DRUG_RESISTANCES']
+        cols_amr = [col for col in data.columns if (col not in cols_other and col not in cols_pred)]
 
-        data = data[cols_other + cols_amr]
+        tdata = data[cols_other + cols_amr]
 
         # set tabledata
-        self.check_and_init_tabledata(data.index)
+        self.check_and_init_tabledata(tdata.index)
 
         renaming = {'SAMPLE': 'Sample', 'ASSEMBLY_TYPE': 'Assembly method', 'NUM_FOUND': '# Genes found'}
-        for col in data.columns:
-            self.add_column(col if col not in renaming else renaming[col], data[col])
+        for col in tdata.columns:
+            self.add_column(col if col not in renaming else renaming[col], tdata[col])
 
+        self.add_col_description('Numbers shown are the coverage of the gene reference sequence.')
         self.add_col_description('Resistance genes were determined with <a href="https://card.mcmaster.ca/analyze/rgi">RGI (CARD resistance gene identifier)</a> ' + \
             'and <a href="https://github.com/tseemann/abricate">Abricate</a> (with CARD database). When both identified the same gene, the higher %coverage hits were chosen.')
 
 
-
-    # unused
-    def add_abricate_results(self, abricate_results):
-        log('Adding abricate results ...')
-
-        res_data = pd.read_csv(abricate_results, index_col='#FILE', sep='\t', dtype={'#FILE': str})
-        self.force_index_dtype_string(res_data)
-
-        # parsing
-        data = res_data.copy().drop('NUM_FOUND', axis=1)
-
-        databases = []
-        isolates = []
-        assembly_types = []
-
-        for ab_res in data.index:
-            fname, ext = ab_res.split('.')
-            if ext != 'csv':
-                log(f'Encountered abnormal abricate result file extension: {ab_res}')
-            
-            abr, database, isolate, asmtype = fname.split('_', 3)
-            if abr != 'abricate':
-                log(f'Encountered non-abricate result filename: {abr}')
-
-            if database not in databases:
-                databases.append(database)
-            if isolate not in isolates:
-                isolates.append(isolate)
-            if asmtype not in assembly_types:
-                assembly_types.append(asmtype)
-
-            data.loc[ab_res, 'DATABASE'] = database
-            data.loc[ab_res, 'ISOLATE'] = isolate
-            data.loc[ab_res, 'ASSEMBLY_TYPE'] = asmtype
-
-        def stringify(strlst):
-            return ', '.join(strlst)
-
-        log(f'Found databases: {stringify(databases)}')
-        log(f'Found assembly types: {stringify(assembly_types)}')
-        log(f'List of isolates: {stringify(isolates)}')
-
-        # sort
-        data['NUM_FOUND'] = res_data['NUM_FOUND']
-        data.sort_values(by=['ISOLATE', 'ASSEMBLY_TYPE', 'DATABASE'], inplace=True)
-
-        cols_other = ['ISOLATE', 'ASSEMBLY_TYPE', 'DATABASE', 'NUM_FOUND']
-        cols_amr = [col for col in data.columns if col not in cols_other]
-
-        data = data[cols_other + cols_amr]
+        # predicted resistances table
+        self.predictiondata = pd.DataFrame(index = self.tabledata.index)
         
-        # TODO REFACTOR THIS - consistent assembly names in the pipeline
-        self.check_and_init_tabledata(data.index)
+        self.predictiondata['Sample'] = data['SAMPLE']
+        self.predictiondata['# Genes found'] = data['NUM_FOUND']
+        
+        self.predictiondataraw = self.predictiondata.copy()
+        self.predictiondataraw['Drug resistances'] = data['DRUG_RESISTANCES']
+        self.predictiondataraw['Drug class resistances'] = data['DRUG_CLASS_RESISTANCES']
 
-        renaming = {'ISOLATE': 'Isolate', 'ASSEMBLY_TYPE': 'Assembly method', 'DATABASE': 'Database', 'NUM_FOUND': '# Genes found'}
+        def drugs_markup(str):
+            drugs = str.split(';')
+            drugs_f = []
+            for d in drugs:
+                ds = d.split(' (',1)
+                drugs_f.append(f'<b>{ds[0]}</b> (' + ds[1])
+            return '; '.join(drugs_f)
 
-        for col in data.columns:
-            self.add_column(col if col not in renaming else renaming[col], data[col])
+        self.predictiondata['Predicted drug resistances'] = [drugs_markup(field) for field in data['DRUG_RESISTANCES']]
+        self.predictiondata['Predicted drug class resistances'] = data['DRUG_CLASS_RESISTANCES']
 
-        self.add_col_description('Resistance genes were determined with abricate.')
 
 
     def add_fastani_results(self, fastani_results):
+
         log('Adding FastANI results ...')
 
         res_data = pd.read_csv(fastani_results, index_col=0, sep='\t', header=None)
@@ -471,9 +441,10 @@ class SummaryReport():
     def write_table_output(self):
         if self.tabledataraw is None:
             self.tabledataraw = self.tabledata.copy()
-        # self.tabledataraw.to_excel(self.report_name + '_datatable.xlsx' , sheet_name='poreCov', index_label='sample')
+        self.tabledataraw.to_excel(self.report_name + '_datatable.xlsx' , sheet_name='CholerAegon', index_label='sample')
+        log(f"Wrote {self.report_name}_datatable.xlsx.")
         self.tabledataraw.to_csv(self.report_name + '_datatable.tsv', index_label='Assembly number', sep='\t')
-
+        log(f"Wrote {self.report_name}_datatable.tsv.")
 
 
 ###
@@ -486,7 +457,6 @@ if __name__ == '__main__':
     # parser.add_argument("-v", "--version_config", help="version config", required=True)
     # parser.add_argument("--CholerAegon_version", help="CholerAegon version", required=True)
     parser.add_argument("--amr_results", help="rgi results table", required=True)
-    parser.add_argument("--prediction_results", help="resistance prediction results table", required=True)
     parser.add_argument("--fastani_results", help="fastani results table")
     args = parser.parse_args()
 
@@ -507,7 +477,8 @@ if __name__ == '__main__':
     if args.amr_results:
         report.add_amr_results(args.amr_results)
     if args.fastani_results:
-        report.add_fastani_results(args.fastani_results)
+        if args.fastani_results != 'deactivated':
+            report.add_fastani_results(args.fastani_results)
 
     # finalize table
     report.reindex_tabledata()
@@ -519,6 +490,6 @@ if __name__ == '__main__':
     # report.add_QC_status_info()
 
 
-    report.write_table_output()
+    # report.write_table_output()
     report.write_html_report()
 

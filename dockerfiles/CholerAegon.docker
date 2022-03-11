@@ -8,5 +8,5 @@ RUN conda config --add channels default && \
     conda config --add channels conda-forge
  
 RUN conda install mamba
-RUN mamba install pandas obonet
+RUN mamba install pandas obonet openpyxl
 RUN conda clean -a

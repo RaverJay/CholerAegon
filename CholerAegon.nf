@@ -402,13 +402,12 @@ process summary_report {
 
     input:
         path(amr_results)
-        path(resistance_prediction)
         path(fastani_results)
     output:
-        tuple path("CholerAegon_summary_report_*.html"), path("CholerAegon_summary_report_*.tsv")
+        path("CholerAegon_summary_report_*.html")
     script:
         """
-        summary_report.py --amr_results ${amr_results} --prediction_results ${resistance_prediction} --fastani_results ${fastani_results}
+        summary_report.py --amr_results ${amr_results} --fastani_results ${fastani_results}
         """
 }
 
@@ -512,12 +511,11 @@ workflow res_prediction_wf {
 workflow create_summary_report_wf {
 
     take:
-        combined_agg_amr_results
         predicted_resistances
         fastani_results
 
     main:
-        summary_report( combined_agg_amr_results, predicted_resistances, fastani_results )
+        summary_report( predicted_resistances, fastani_results )
 
 }
 
@@ -630,7 +628,7 @@ workflow {
             ani_result_ch = Channel.from( ['deactivated'] )
         }
 
-        create_summary_report_wf( res_gene_detection_wf.out, res_prediction_wf.out, ani_result_ch )
+        create_summary_report_wf( res_prediction_wf.out, ani_result_ch )
 
 
 }
