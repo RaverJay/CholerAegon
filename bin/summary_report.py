@@ -31,6 +31,9 @@ class SummaryReport():
     # CholerAegon_params = {}
     # tool_versions = {}
 
+    predictiondata = None
+    predictiondataraw = None
+
     tabledata = None
     tabledataraw = None
     col_formatters = {}
@@ -83,7 +86,7 @@ class SummaryReport():
 
 
     def add_version_param(self, porecov_version):
-        pc_param = '<a href="https://github.com/RaverJay/CholerAegon"><b>poreCov</b></a> version'
+        pc_param = '<a href="https://github.com/RaverJay/CholerAegon"><b>CholerAegon</b></a> version'
         warning_msg = 'Warning: Not an official release version of CholerAegon. Use parameter \'-r\' to specify a release version.'
         revision, commitID, scriptID = porecov_version.split(':')
         if revision != 'null':
@@ -483,7 +486,7 @@ if __name__ == '__main__':
     # parser.add_argument("-v", "--version_config", help="version config", required=True)
     # parser.add_argument("--CholerAegon_version", help="CholerAegon version", required=True)
     parser.add_argument("--amr_results", help="rgi results table", required=True)
-    parser.add_argument("--abricate_results", help="abricate results table")
+    parser.add_argument("--prediction_results", help="resistance prediction results table", required=True)
     parser.add_argument("--fastani_results", help="fastani results table")
     args = parser.parse_args()
 
@@ -495,6 +498,9 @@ if __name__ == '__main__':
     # # check for samples input 
     # if args.samples:
     #     report.check_and_init_table_with_samples(args.samples)
+
+
+    # prediction table
 
 
     # results table
