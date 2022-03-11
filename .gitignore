@@ -1,4 +1,4 @@
-work
+/work
 .nextflow*
-nf_downloads
-result*
+/nf_downloads
+/result*

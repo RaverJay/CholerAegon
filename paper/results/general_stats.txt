@@ -1,0 +1,1968 @@
+--- Stats for: assemblies/Iso02501_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,079,145
+Median len:  2,076,128.5
+Mean len:    2,076,128.50
+Readlen N50: 3,079,145
+Total bases: 4,152,257
+
+--- Stats for: assemblies/Iso02501_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,079,838
+Median len:  2,076,838.0
+Mean len:    2,076,838.00
+Readlen N50: 3,079,838
+Total bases: 4,153,676
+
+--- Stats for: assemblies/Iso02501_shortreads_assembly.fasta ---
+Num reads:   310
+Max len:     392,534
+Median len:  137.0
+Mean len:    13,110.17
+Readlen N50: 235,731
+Total bases: 4,064,154
+
+--- Stats for: assemblies/Iso02502_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,098,107
+Median len:  2,078,475.5
+Mean len:    2,078,475.50
+Readlen N50: 3,098,107
+Total bases: 4,156,951
+
+--- Stats for: assemblies/Iso02502_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,098,702
+Median len:  2,078,863.0
+Mean len:    2,078,863.00
+Readlen N50: 3,098,702
+Total bases: 4,157,726
+
+--- Stats for: assemblies/Iso02502_shortreads_assembly.fasta ---
+Num reads:   270
+Max len:     555,159
+Median len:  141.0
+Mean len:    15,121.06
+Readlen N50: 235,733
+Total bases: 4,082,686
+
+--- Stats for: assemblies/Iso02503_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,098,093
+Median len:  2,078,140.0
+Mean len:    2,078,140.00
+Readlen N50: 3,098,093
+Total bases: 4,156,280
+
+--- Stats for: assemblies/Iso02503_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,098,727
+Median len:  2,078,554.5
+Mean len:    2,078,554.50
+Readlen N50: 3,098,727
+Total bases: 4,157,109
+
+--- Stats for: assemblies/Iso02503_shortreads_assembly.fasta ---
+Num reads:   292
+Max len:     555,220
+Median len:  142.0
+Mean len:    13,982.33
+Readlen N50: 246,173
+Total bases: 4,082,841
+
+--- Stats for: assemblies/Iso02504_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,098,118
+Median len:  2,078,485.5
+Mean len:    2,078,485.50
+Readlen N50: 3,098,118
+Total bases: 4,156,971
+
+--- Stats for: assemblies/Iso02504_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,098,992
+Median len:  2,079,012.5
+Mean len:    2,079,012.50
+Readlen N50: 3,098,992
+Total bases: 4,158,025
+
+--- Stats for: assemblies/Iso02504_shortreads_assembly.fasta ---
+Num reads:   257
+Max len:     555,220
+Median len:  132.0
+Mean len:    15,884.94
+Readlen N50: 246,171
+Total bases: 4,082,430
+
+--- Stats for: assemblies/Iso02506_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,080,931
+Median len:  2,069,894.5
+Mean len:    2,069,894.50
+Readlen N50: 3,080,931
+Total bases: 4,139,789
+
+--- Stats for: assemblies/Iso02506_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,081,711
+Median len:  2,070,631.5
+Mean len:    2,070,631.50
+Readlen N50: 3,081,711
+Total bases: 4,141,263
+
+--- Stats for: assemblies/Iso02506_shortreads_assembly.fasta ---
+Num reads:   328
+Max len:     492,915
+Median len:  130.5
+Mean len:    12,418.86
+Readlen N50: 215,140
+Total bases: 4,073,386
+
+--- Stats for: assemblies/Iso02507_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,097,825
+Median len:  2,072,251.0
+Mean len:    2,072,251.00
+Readlen N50: 3,097,825
+Total bases: 4,144,502
+
+--- Stats for: assemblies/Iso02507_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,098,369
+Median len:  2,072,619.5
+Mean len:    2,072,619.50
+Readlen N50: 3,098,369
+Total bases: 4,145,239
+
+--- Stats for: assemblies/Iso02507_shortreads_assembly.fasta ---
+Num reads:   238
+Max len:     595,024
+Median len:  146.0
+Mean len:    17,145.55
+Readlen N50: 246,308
+Total bases: 4,080,641
+
+--- Stats for: assemblies/Iso02508_hybrid_assembly.fasta ---
+Num reads:   1
+Max len:     4,148,483
+Median len:  4,148,483.0
+Mean len:    4,148,483.00
+Readlen N50: 4,148,483
+Total bases: 4,148,483
+
+--- Stats for: assemblies/Iso02508_longreads_assembly.fasta ---
+Num reads:   1
+Max len:     4,150,096
+Median len:  4,150,096.0
+Mean len:    4,150,096.00
+Readlen N50: 4,150,096
+Total bases: 4,150,096
+
+--- Stats for: assemblies/Iso02508_shortreads_assembly.fasta ---
+Num reads:   289
+Max len:     555,160
+Median len:  137.0
+Mean len:    14,118.82
+Readlen N50: 246,443
+Total bases: 4,080,339
+
+--- Stats for: assemblies/Iso02509_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,126,278
+Median len:  2,092,463.0
+Mean len:    2,092,463.00
+Readlen N50: 3,126,278
+Total bases: 4,184,926
+
+--- Stats for: assemblies/Iso02509_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,127,117
+Median len:  2,092,976.5
+Mean len:    2,092,976.50
+Readlen N50: 3,127,117
+Total bases: 4,185,953
+
+--- Stats for: assemblies/Iso02509_shortreads_assembly.fasta ---
+Num reads:   315
+Max len:     555,160
+Median len:  128.0
+Mean len:    12,963.87
+Readlen N50: 235,697
+Total bases: 4,083,618
+
+--- Stats for: assemblies/Iso02510_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,098,100
+Median len:  2,085,621.0
+Mean len:    2,085,621.00
+Readlen N50: 3,098,100
+Total bases: 4,171,242
+
+--- Stats for: assemblies/Iso02510_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,098,714
+Median len:  2,086,023.5
+Mean len:    2,086,023.50
+Readlen N50: 3,098,714
+Total bases: 4,172,047
+
+--- Stats for: assemblies/Iso02510_shortreads_assembly.fasta ---
+Num reads:   302
+Max len:     555,220
+Median len:  131.5
+Mean len:    13,522.51
+Readlen N50: 247,023
+Total bases: 4,083,798
+
+--- Stats for: assemblies/Iso02511_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,098,105
+Median len:  2,078,494.0
+Mean len:    2,078,494.00
+Readlen N50: 3,098,105
+Total bases: 4,156,988
+
+--- Stats for: assemblies/Iso02511_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,098,682
+Median len:  2,078,888.5
+Mean len:    2,078,888.50
+Readlen N50: 3,098,682
+Total bases: 4,157,777
+
+--- Stats for: assemblies/Iso02511_shortreads_assembly.fasta ---
+Num reads:   283
+Max len:     555,220
+Median len:  141.0
+Mean len:    14,426.26
+Readlen N50: 246,756
+Total bases: 4,082,632
+
+--- Stats for: assemblies/Iso02512_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,092,076
+Median len:  2,069,379.5
+Mean len:    2,069,379.50
+Readlen N50: 3,092,076
+Total bases: 4,138,759
+
+--- Stats for: assemblies/Iso02512_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,092,606
+Median len:  2,069,744.0
+Mean len:    2,069,744.00
+Readlen N50: 3,092,606
+Total bases: 4,139,488
+
+--- Stats for: assemblies/Iso02512_shortreads_assembly.fasta ---
+Num reads:   292
+Max len:     555,160
+Median len:  137.0
+Mean len:    13,982.39
+Readlen N50: 274,608
+Total bases: 4,082,859
+
+--- Stats for: assemblies/Iso02513_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,126,178
+Median len:  2,092,514.5
+Mean len:    2,092,514.50
+Readlen N50: 3,126,178
+Total bases: 4,185,029
+
+--- Stats for: assemblies/Iso02513_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,126,679
+Median len:  2,092,958.5
+Mean len:    2,092,958.50
+Readlen N50: 3,126,679
+Total bases: 4,185,917
+
+--- Stats for: assemblies/Iso02513_shortreads_assembly.fasta ---
+Num reads:   265
+Max len:     403,910
+Median len:  147.0
+Mean len:    15,350.26
+Readlen N50: 215,153
+Total bases: 4,067,818
+
+--- Stats for: assemblies/Iso02514_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,092,090
+Median len:  2,069,387.5
+Mean len:    2,069,387.50
+Readlen N50: 3,092,090
+Total bases: 4,138,775
+
+--- Stats for: assemblies/Iso02514_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,093,238
+Median len:  2,070,058.5
+Mean len:    2,070,058.50
+Readlen N50: 3,093,238
+Total bases: 4,140,117
+
+--- Stats for: assemblies/Iso02514_shortreads_assembly.fasta ---
+Num reads:   266
+Max len:     555,220
+Median len:  132.0
+Mean len:    15,345.01
+Readlen N50: 246,172
+Total bases: 4,081,772
+
+--- Stats for: assemblies/Iso02515_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,098,112
+Median len:  2,085,615.5
+Mean len:    2,085,615.50
+Readlen N50: 3,098,112
+Total bases: 4,171,231
+
+--- Stats for: assemblies/Iso02515_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,098,650
+Median len:  2,085,963.5
+Mean len:    2,085,963.50
+Readlen N50: 3,098,650
+Total bases: 4,171,927
+
+--- Stats for: assemblies/Iso02515_shortreads_assembly.fasta ---
+Num reads:   280
+Max len:     555,160
+Median len:  145.0
+Mean len:    14,581.80
+Readlen N50: 235,735
+Total bases: 4,082,904
+
+--- Stats for: assemblies/Iso02517_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,098,061
+Median len:  2,085,583.0
+Mean len:    2,085,583.00
+Readlen N50: 3,098,061
+Total bases: 4,171,166
+
+--- Stats for: assemblies/Iso02517_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,098,679
+Median len:  2,085,984.0
+Mean len:    2,085,984.00
+Readlen N50: 3,098,679
+Total bases: 4,171,968
+
+--- Stats for: assemblies/Iso02517_shortreads_assembly.fasta ---
+Num reads:   274
+Max len:     555,221
+Median len:  145.0
+Mean len:    14,901.27
+Readlen N50: 235,697
+Total bases: 4,082,949
+
+--- Stats for: assemblies/Iso02518_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,072,672
+Median len:  2,059,681.0
+Mean len:    2,059,681.00
+Readlen N50: 3,072,672
+Total bases: 4,119,362
+
+--- Stats for: assemblies/Iso02518_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,073,265
+Median len:  2,060,078.0
+Mean len:    2,060,078.00
+Readlen N50: 3,073,265
+Total bases: 4,120,156
+
+--- Stats for: assemblies/Iso02518_shortreads_assembly.fasta ---
+Num reads:   235
+Max len:     555,160
+Median len:  147.0
+Mean len:    17,272.71
+Readlen N50: 235,699
+Total bases: 4,059,088
+
+--- Stats for: assemblies/Iso02519_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,037,024
+Median len:  2,041,072.5
+Mean len:    2,041,072.50
+Readlen N50: 3,037,024
+Total bases: 4,082,145
+
+--- Stats for: assemblies/Iso02519_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,037,592
+Median len:  2,041,439.5
+Mean len:    2,041,439.50
+Readlen N50: 3,037,592
+Total bases: 4,082,879
+
+--- Stats for: assemblies/Iso02519_shortreads_assembly.fasta ---
+Num reads:   273
+Max len:     555,152
+Median len:  141.0
+Mean len:    14,746.81
+Readlen N50: 235,730
+Total bases: 4,025,879
+
+--- Stats for: assemblies/Iso02520_hybrid_assembly.fasta ---
+Num reads:   1
+Max len:     4,156,698
+Median len:  4,156,698.0
+Mean len:    4,156,698.00
+Readlen N50: 4,156,698
+Total bases: 4,156,698
+
+--- Stats for: assemblies/Iso02520_longreads_assembly.fasta ---
+Num reads:   1
+Max len:     4,157,414
+Median len:  4,157,414.0
+Mean len:    4,157,414.00
+Readlen N50: 4,157,414
+Total bases: 4,157,414
+
+--- Stats for: assemblies/Iso02520_shortreads_assembly.fasta ---
+Num reads:   261
+Max len:     555,160
+Median len:  143.0
+Mean len:    15,637.62
+Readlen N50: 274,613
+Total bases: 4,081,419
+
+--- Stats for: assemblies/Iso02522_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,062,454
+Median len:  2,053,793.5
+Mean len:    2,053,793.50
+Readlen N50: 3,062,454
+Total bases: 4,107,587
+
+--- Stats for: assemblies/Iso02522_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,062,981
+Median len:  2,054,141.5
+Mean len:    2,054,141.50
+Readlen N50: 3,062,981
+Total bases: 4,108,283
+
+--- Stats for: assemblies/Iso02522_shortreads_assembly.fasta ---
+Num reads:   279
+Max len:     555,212
+Median len:  139.0
+Mean len:    14,463.42
+Readlen N50: 246,168
+Total bases: 4,035,295
+
+--- Stats for: assemblies/Iso02523_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,048,294
+Median len:  2,046,715.0
+Mean len:    2,046,715.00
+Readlen N50: 3,048,294
+Total bases: 4,093,430
+
+--- Stats for: assemblies/Iso02523_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,048,891
+Median len:  2,047,126.0
+Mean len:    2,047,126.00
+Readlen N50: 3,048,891
+Total bases: 4,094,252
+
+--- Stats for: assemblies/Iso02523_shortreads_assembly.fasta ---
+Num reads:   279
+Max len:     555,212
+Median len:  139.0
+Mean len:    15,219.49
+Readlen N50: 299,176
+Total bases: 4,246,238
+
+--- Stats for: assemblies/Iso02524_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,048,299
+Median len:  2,046,710.0
+Mean len:    2,046,710.00
+Readlen N50: 3,048,299
+Total bases: 4,093,420
+
+--- Stats for: assemblies/Iso02524_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,048,850
+Median len:  2,047,079.0
+Mean len:    2,047,079.00
+Readlen N50: 3,048,850
+Total bases: 4,094,158
+
+--- Stats for: assemblies/Iso02524_shortreads_assembly.fasta ---
+Num reads:   271
+Max len:     555,212
+Median len:  139.0
+Mean len:    14,886.96
+Readlen N50: 247,021
+Total bases: 4,034,365
+
+--- Stats for: assemblies/Iso02525_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,042,739
+Median len:  2,051,073.5
+Mean len:    2,051,073.50
+Readlen N50: 3,042,739
+Total bases: 4,102,147
+
+--- Stats for: assemblies/Iso02525_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,043,270
+Median len:  2,051,416.5
+Mean len:    2,051,416.50
+Readlen N50: 3,043,270
+Total bases: 4,102,833
+
+--- Stats for: assemblies/Iso02525_shortreads_assembly.fasta ---
+Num reads:   289
+Max len:     555,219
+Median len:  132.0
+Mean len:    13,965.88
+Readlen N50: 246,174
+Total bases: 4,036,140
+
+--- Stats for: assemblies/Iso02527_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,048,297
+Median len:  2,046,718.5
+Mean len:    2,046,718.50
+Readlen N50: 3,048,297
+Total bases: 4,093,437
+
+--- Stats for: assemblies/Iso02527_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,048,838
+Median len:  2,047,075.0
+Mean len:    2,047,075.00
+Readlen N50: 3,048,838
+Total bases: 4,094,150
+
+--- Stats for: assemblies/Iso02527_shortreads_assembly.fasta ---
+Num reads:   306
+Max len:     555,213
+Median len:  130.0
+Mean len:    13,191.70
+Readlen N50: 246,760
+Total bases: 4,036,660
+
+--- Stats for: assemblies/Iso02529_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,042,618
+Median len:  2,051,013.0
+Mean len:    2,051,013.00
+Readlen N50: 3,042,618
+Total bases: 4,102,026
+
+--- Stats for: assemblies/Iso02529_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,043,268
+Median len:  2,051,437.5
+Mean len:    2,051,437.50
+Readlen N50: 3,043,268
+Total bases: 4,102,875
+
+--- Stats for: assemblies/Iso02529_shortreads_assembly.fasta ---
+Num reads:   287
+Max len:     392,649
+Median len:  133.0
+Mean len:    14,060.09
+Readlen N50: 274,765
+Total bases: 4,035,247
+
+--- Stats for: assemblies/Iso02532_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,057,831
+Median len:  2,051,473.0
+Mean len:    2,051,473.00
+Readlen N50: 3,057,831
+Total bases: 4,102,946
+
+--- Stats for: assemblies/Iso02532_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,058,332
+Median len:  2,051,805.5
+Mean len:    2,051,805.50
+Readlen N50: 3,058,332
+Total bases: 4,103,611
+
+--- Stats for: assemblies/Iso02532_shortreads_assembly.fasta ---
+Num reads:   345
+Max len:     555,076
+Median len:  126.0
+Mean len:    11,706.10
+Readlen N50: 246,267
+Total bases: 4,038,605
+
+--- Stats for: assemblies/Iso02533_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,990
+Median len:  2,049,050.5
+Mean len:    2,049,050.50
+Readlen N50: 3,052,990
+Total bases: 4,098,101
+
+--- Stats for: assemblies/Iso02533_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,543
+Median len:  2,049,415.5
+Mean len:    2,049,415.50
+Readlen N50: 3,053,543
+Total bases: 4,098,831
+
+--- Stats for: assemblies/Iso02533_shortreads_assembly.fasta ---
+Num reads:   272
+Max len:     555,137
+Median len:  138.0
+Mean len:    14,835.61
+Readlen N50: 235,731
+Total bases: 4,035,286
+
+--- Stats for: assemblies/Iso02534_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,932
+Median len:  2,049,021.5
+Mean len:    2,049,021.50
+Readlen N50: 3,052,932
+Total bases: 4,098,043
+
+--- Stats for: assemblies/Iso02534_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,805
+Median len:  2,049,545.5
+Mean len:    2,049,545.50
+Readlen N50: 3,053,805
+Total bases: 4,099,091
+
+--- Stats for: assemblies/Iso02534_shortreads_assembly.fasta ---
+Num reads:   299
+Max len:     555,137
+Median len:  124.0
+Mean len:    13,500.09
+Readlen N50: 246,276
+Total bases: 4,036,527
+
+--- Stats for: assemblies/Iso02535_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,997
+Median len:  2,049,055.0
+Mean len:    2,049,055.00
+Readlen N50: 3,052,997
+Total bases: 4,098,110
+
+--- Stats for: assemblies/Iso02535_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,537
+Median len:  2,049,416.5
+Mean len:    2,049,416.50
+Readlen N50: 3,053,537
+Total bases: 4,098,833
+
+--- Stats for: assemblies/Iso02535_shortreads_assembly.fasta ---
+Num reads:   286
+Max len:     555,080
+Median len:  131.5
+Mean len:    14,111.98
+Readlen N50: 246,260
+Total bases: 4,036,027
+
+--- Stats for: assemblies/Iso02536_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,047,422
+Median len:  2,046,268.0
+Mean len:    2,046,268.00
+Readlen N50: 3,047,422
+Total bases: 4,092,536
+
+--- Stats for: assemblies/Iso02536_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,047,950
+Median len:  2,046,626.0
+Mean len:    2,046,626.00
+Readlen N50: 3,047,950
+Total bases: 4,093,252
+
+--- Stats for: assemblies/Iso02536_shortreads_assembly.fasta ---
+Num reads:   286
+Max len:     392,219
+Median len:  131.5
+Mean len:    14,112.63
+Readlen N50: 167,891
+Total bases: 4,036,213
+
+--- Stats for: assemblies/Iso02537_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,034,433
+Median len:  2,039,555.0
+Mean len:    2,039,555.00
+Readlen N50: 3,034,433
+Total bases: 4,079,110
+
+--- Stats for: assemblies/Iso02537_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,034,931
+Median len:  2,039,887.0
+Mean len:    2,039,887.00
+Readlen N50: 3,034,931
+Total bases: 4,079,774
+
+--- Stats for: assemblies/Iso02537_shortreads_assembly.fasta ---
+Num reads:   336
+Max len:     555,077
+Median len:  122.0
+Mean len:    11,997.91
+Readlen N50: 246,168
+Total bases: 4,031,298
+
+--- Stats for: assemblies/Iso02538_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     2,883,682
+Median len:  1,945,602.5
+Mean len:    1,945,602.50
+Readlen N50: 2,883,682
+Total bases: 3,891,205
+
+--- Stats for: assemblies/Iso02538_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     2,884,350
+Median len:  1,945,936.0
+Mean len:    1,945,936.00
+Readlen N50: 2,884,350
+Total bases: 3,891,872
+
+--- Stats for: assemblies/Iso02538_shortreads_assembly.fasta ---
+Num reads:   433
+Max len:     383,762
+Median len:  111.0
+Mean len:    8,826.17
+Readlen N50: 163,548
+Total bases: 3,821,731
+
+--- Stats for: assemblies/Iso02539_hybrid_assembly.fasta ---
+Num reads:   3
+Max len:     2,999,299
+Median len:  1,082,141.0
+Mean len:    1,362,355.67
+Readlen N50: 2,999,299
+Total bases: 4,087,067
+
+--- Stats for: assemblies/Iso02539_longreads_assembly.fasta ---
+Num reads:   3
+Max len:     2,999,106
+Median len:  1,082,096.0
+Mean len:    1,362,276.33
+Readlen N50: 2,999,106
+Total bases: 4,086,829
+
+--- Stats for: assemblies/Iso02539_shortreads_assembly.fasta ---
+Num reads:   526
+Max len:     461,817
+Median len:  111.0
+Mean len:    7,655.57
+Readlen N50: 247,727
+Total bases: 4,026,832
+
+--- Stats for: assemblies/Iso02541_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,049,008
+Median len:  2,054,193.0
+Mean len:    2,054,193.00
+Readlen N50: 3,049,008
+Total bases: 4,108,386
+
+--- Stats for: assemblies/Iso02541_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,049,751
+Median len:  2,054,659.0
+Mean len:    2,054,659.00
+Readlen N50: 3,049,751
+Total bases: 4,109,318
+
+--- Stats for: assemblies/Iso02541_shortreads_assembly.fasta ---
+Num reads:   303
+Max len:     555,077
+Median len:  131.0
+Mean len:    13,309.63
+Readlen N50: 246,265
+Total bases: 4,032,819
+
+--- Stats for: assemblies/Iso02542_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,993
+Median len:  2,049,004.0
+Mean len:    2,049,004.00
+Readlen N50: 3,052,993
+Total bases: 4,098,008
+
+--- Stats for: assemblies/Iso02542_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,653
+Median len:  2,049,552.5
+Mean len:    2,049,552.50
+Readlen N50: 3,053,653
+Total bases: 4,099,105
+
+--- Stats for: assemblies/Iso02542_shortreads_assembly.fasta ---
+Num reads:   292
+Max len:     595,176
+Median len:  130.0
+Mean len:    13,823.54
+Readlen N50: 246,266
+Total bases: 4,036,473
+
+--- Stats for: assemblies/Iso02544_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,982
+Median len:  2,049,045.5
+Mean len:    2,049,045.50
+Readlen N50: 3,052,982
+Total bases: 4,098,091
+
+--- Stats for: assemblies/Iso02544_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,461
+Median len:  2,049,363.0
+Mean len:    2,049,363.00
+Readlen N50: 3,053,461
+Total bases: 4,098,726
+
+--- Stats for: assemblies/Iso02544_shortreads_assembly.fasta ---
+Num reads:   269
+Max len:     555,076
+Median len:  138.0
+Mean len:    15,004.58
+Readlen N50: 235,731
+Total bases: 4,036,232
+
+--- Stats for: assemblies/Iso02545_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,983
+Median len:  2,049,054.5
+Mean len:    2,049,054.50
+Readlen N50: 3,052,983
+Total bases: 4,098,109
+
+--- Stats for: assemblies/Iso02545_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,518
+Median len:  2,049,407.0
+Mean len:    2,049,407.00
+Readlen N50: 3,053,518
+Total bases: 4,098,814
+
+--- Stats for: assemblies/Iso02545_shortreads_assembly.fasta ---
+Num reads:   262
+Max len:     555,094
+Median len:  131.5
+Mean len:    15,401.82
+Readlen N50: 246,606
+Total bases: 4,035,277
+
+--- Stats for: assemblies/Iso02546_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,980
+Median len:  2,056,179.0
+Mean len:    2,056,179.00
+Readlen N50: 3,052,980
+Total bases: 4,112,358
+
+--- Stats for: assemblies/Iso02546_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,515
+Median len:  2,056,531.5
+Mean len:    2,056,531.50
+Readlen N50: 3,053,515
+Total bases: 4,113,063
+
+--- Stats for: assemblies/Iso02546_shortreads_assembly.fasta ---
+Num reads:   276
+Max len:     555,077
+Median len:  130.0
+Mean len:    14,624.11
+Readlen N50: 246,168
+Total bases: 4,036,254
+
+--- Stats for: assemblies/Iso02547_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,968
+Median len:  2,049,039.0
+Mean len:    2,049,039.00
+Readlen N50: 3,052,968
+Total bases: 4,098,078
+
+--- Stats for: assemblies/Iso02547_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,552
+Median len:  2,049,432.0
+Mean len:    2,049,432.00
+Readlen N50: 3,053,552
+Total bases: 4,098,864
+
+--- Stats for: assemblies/Iso02547_shortreads_assembly.fasta ---
+Num reads:   268
+Max len:     555,077
+Median len:  139.0
+Mean len:    15,063.02
+Readlen N50: 246,169
+Total bases: 4,036,890
+
+--- Stats for: assemblies/Iso02549_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,030
+Median len:  2,049,070.0
+Mean len:    2,049,070.00
+Readlen N50: 3,053,030
+Total bases: 4,098,140
+
+--- Stats for: assemblies/Iso02549_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,865
+Median len:  2,049,590.0
+Mean len:    2,049,590.00
+Readlen N50: 3,053,865
+Total bases: 4,099,180
+
+--- Stats for: assemblies/Iso02549_shortreads_assembly.fasta ---
+Num reads:   294
+Max len:     555,077
+Median len:  139.0
+Mean len:    13,729.62
+Readlen N50: 246,606
+Total bases: 4,036,508
+
+--- Stats for: assemblies/Iso02550_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,989
+Median len:  2,049,045.0
+Mean len:    2,049,045.00
+Readlen N50: 3,052,989
+Total bases: 4,098,090
+
+--- Stats for: assemblies/Iso02550_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,494
+Median len:  2,049,383.5
+Mean len:    2,049,383.50
+Readlen N50: 3,053,494
+Total bases: 4,098,767
+
+--- Stats for: assemblies/Iso02550_shortreads_assembly.fasta ---
+Num reads:   269
+Max len:     555,077
+Median len:  133.0
+Mean len:    14,997.97
+Readlen N50: 246,435
+Total bases: 4,034,455
+
+--- Stats for: assemblies/Iso02551_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,041,803
+Median len:  2,043,456.0
+Mean len:    2,043,456.00
+Readlen N50: 3,041,803
+Total bases: 4,086,912
+
+--- Stats for: assemblies/Iso02551_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,042,433
+Median len:  2,043,871.5
+Mean len:    2,043,871.50
+Readlen N50: 3,042,433
+Total bases: 4,087,743
+
+--- Stats for: assemblies/Iso02551_shortreads_assembly.fasta ---
+Num reads:   264
+Max len:     555,137
+Median len:  132.0
+Mean len:    15,246.90
+Readlen N50: 246,430
+Total bases: 4,025,182
+
+--- Stats for: assemblies/Iso02552_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,054,225
+Median len:  2,049,667.5
+Mean len:    2,049,667.50
+Readlen N50: 3,054,225
+Total bases: 4,099,335
+
+--- Stats for: assemblies/Iso02552_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,054,802
+Median len:  2,050,048.0
+Mean len:    2,050,048.00
+Readlen N50: 3,054,802
+Total bases: 4,100,096
+
+--- Stats for: assemblies/Iso02552_shortreads_assembly.fasta ---
+Num reads:   275
+Max len:     555,077
+Median len:  137.0
+Mean len:    14,675.61
+Readlen N50: 235,699
+Total bases: 4,035,794
+
+--- Stats for: assemblies/Iso02553_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,985
+Median len:  2,049,045.5
+Mean len:    2,049,045.50
+Readlen N50: 3,052,985
+Total bases: 4,098,091
+
+--- Stats for: assemblies/Iso02553_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,543
+Median len:  2,049,419.0
+Mean len:    2,049,419.00
+Readlen N50: 3,053,543
+Total bases: 4,098,838
+
+--- Stats for: assemblies/Iso02553_shortreads_assembly.fasta ---
+Num reads:   307
+Max len:     555,077
+Median len:  130.0
+Mean len:    13,151.36
+Readlen N50: 246,589
+Total bases: 4,037,466
+
+--- Stats for: assemblies/Iso02554_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,054,285
+Median len:  2,049,697.0
+Mean len:    2,049,697.00
+Readlen N50: 3,054,285
+Total bases: 4,099,394
+
+--- Stats for: assemblies/Iso02554_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,054,851
+Median len:  2,050,071.0
+Mean len:    2,050,071.00
+Readlen N50: 3,054,851
+Total bases: 4,100,142
+
+--- Stats for: assemblies/Iso02554_shortreads_assembly.fasta ---
+Num reads:   280
+Max len:     386,749
+Median len:  132.5
+Mean len:    14,414.80
+Readlen N50: 168,067
+Total bases: 4,036,144
+
+--- Stats for: assemblies/Iso02555_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,975
+Median len:  2,049,044.0
+Mean len:    2,049,044.00
+Readlen N50: 3,052,975
+Total bases: 4,098,088
+
+--- Stats for: assemblies/Iso02555_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,540
+Median len:  2,049,418.0
+Mean len:    2,049,418.00
+Readlen N50: 3,053,540
+Total bases: 4,098,836
+
+--- Stats for: assemblies/Iso02555_shortreads_assembly.fasta ---
+Num reads:   275
+Max len:     555,080
+Median len:  137.0
+Mean len:    14,670.80
+Readlen N50: 246,437
+Total bases: 4,034,471
+
+--- Stats for: assemblies/Iso02556_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,047,445
+Median len:  2,046,286.5
+Mean len:    2,046,286.50
+Readlen N50: 3,047,445
+Total bases: 4,092,573
+
+--- Stats for: assemblies/Iso02556_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,048,041
+Median len:  2,046,733.0
+Mean len:    2,046,733.00
+Readlen N50: 3,048,041
+Total bases: 4,093,466
+
+--- Stats for: assemblies/Iso02556_shortreads_assembly.fasta ---
+Num reads:   298
+Max len:     555,078
+Median len:  132.5
+Mean len:    13,545.67
+Readlen N50: 235,731
+Total bases: 4,036,611
+
+--- Stats for: assemblies/Iso02557_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,027,648
+Median len:  2,036,376.0
+Mean len:    2,036,376.00
+Readlen N50: 3,027,648
+Total bases: 4,072,752
+
+--- Stats for: assemblies/Iso02557_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,028,187
+Median len:  2,036,733.5
+Mean len:    2,036,733.50
+Readlen N50: 3,028,187
+Total bases: 4,073,467
+
+--- Stats for: assemblies/Iso02557_shortreads_assembly.fasta ---
+Num reads:   266
+Max len:     555,075
+Median len:  132.0
+Mean len:    15,116.22
+Readlen N50: 235,712
+Total bases: 4,020,914
+
+--- Stats for: assemblies/Iso02558_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,048,488
+Median len:  2,046,795.5
+Mean len:    2,046,795.50
+Readlen N50: 3,048,488
+Total bases: 4,093,591
+
+--- Stats for: assemblies/Iso02558_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,049,188
+Median len:  2,047,234.5
+Mean len:    2,047,234.50
+Readlen N50: 3,049,188
+Total bases: 4,094,469
+
+--- Stats for: assemblies/Iso02558_shortreads_assembly.fasta ---
+Num reads:   274
+Max len:     392,574
+Median len:  130.0
+Mean len:    14,727.22
+Readlen N50: 189,540
+Total bases: 4,035,258
+
+--- Stats for: assemblies/Iso02559_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,030,559
+Median len:  2,037,834.0
+Mean len:    2,037,834.00
+Readlen N50: 3,030,559
+Total bases: 4,075,668
+
+--- Stats for: assemblies/Iso02559_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,031,071
+Median len:  2,038,172.0
+Mean len:    2,038,172.00
+Readlen N50: 3,031,071
+Total bases: 4,076,344
+
+--- Stats for: assemblies/Iso02559_shortreads_assembly.fasta ---
+Num reads:   253
+Max len:     620,218
+Median len:  130.0
+Mean len:    15,894.32
+Readlen N50: 246,435
+Total bases: 4,021,263
+
+--- Stats for: assemblies/Iso02560_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,047,258
+Median len:  2,046,185.5
+Mean len:    2,046,185.50
+Readlen N50: 3,047,258
+Total bases: 4,092,371
+
+--- Stats for: assemblies/Iso02560_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,047,836
+Median len:  2,046,717.0
+Mean len:    2,046,717.00
+Readlen N50: 3,047,836
+Total bases: 4,093,434
+
+--- Stats for: assemblies/Iso02560_shortreads_assembly.fasta ---
+Num reads:   279
+Max len:     555,077
+Median len:  132.0
+Mean len:    14,464.75
+Readlen N50: 246,338
+Total bases: 4,035,665
+
+--- Stats for: assemblies/Iso02561_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,983
+Median len:  2,049,044.0
+Mean len:    2,049,044.00
+Readlen N50: 3,052,983
+Total bases: 4,098,088
+
+--- Stats for: assemblies/Iso02561_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,674
+Median len:  2,049,496.0
+Mean len:    2,049,496.00
+Readlen N50: 3,053,674
+Total bases: 4,098,992
+
+--- Stats for: assemblies/Iso02561_shortreads_assembly.fasta ---
+Num reads:   281
+Max len:     555,077
+Median len:  130.0
+Mean len:    14,362.54
+Readlen N50: 189,546
+Total bases: 4,035,874
+
+--- Stats for: assemblies/Iso02563_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,047,428
+Median len:  2,046,237.0
+Mean len:    2,046,237.00
+Readlen N50: 3,047,428
+Total bases: 4,092,474
+
+--- Stats for: assemblies/Iso02563_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,047,870
+Median len:  2,046,531.5
+Mean len:    2,046,531.50
+Readlen N50: 3,047,870
+Total bases: 4,093,063
+
+--- Stats for: assemblies/Iso02563_shortreads_assembly.fasta ---
+Num reads:   426
+Max len:     355,046
+Median len:  104.5
+Mean len:    9,492.38
+Readlen N50: 151,550
+Total bases: 4,043,752
+
+--- Stats for: assemblies/Iso02564_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,049,391
+Median len:  2,047,249.0
+Mean len:    2,047,249.00
+Readlen N50: 3,049,391
+Total bases: 4,094,498
+
+--- Stats for: assemblies/Iso02564_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,050,094
+Median len:  2,047,723.0
+Mean len:    2,047,723.00
+Readlen N50: 3,050,094
+Total bases: 4,095,446
+
+--- Stats for: assemblies/Iso02564_shortreads_assembly.fasta ---
+Num reads:   265
+Max len:     555,077
+Median len:  133.0
+Mean len:    15,221.53
+Readlen N50: 246,604
+Total bases: 4,033,706
+
+--- Stats for: assemblies/Iso02565_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,051,177
+Median len:  2,048,143.0
+Mean len:    2,048,143.00
+Readlen N50: 3,051,177
+Total bases: 4,096,286
+
+--- Stats for: assemblies/Iso02565_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,051,915
+Median len:  2,048,639.5
+Mean len:    2,048,639.50
+Readlen N50: 3,051,915
+Total bases: 4,097,279
+
+--- Stats for: assemblies/Iso02565_shortreads_assembly.fasta ---
+Num reads:   267
+Max len:     392,574
+Median len:  137.0
+Mean len:    15,099.39
+Readlen N50: 205,899
+Total bases: 4,031,536
+
+--- Stats for: assemblies/Iso02566_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,049,917
+Median len:  2,047,509.0
+Mean len:    2,047,509.00
+Readlen N50: 3,049,917
+Total bases: 4,095,018
+
+--- Stats for: assemblies/Iso02566_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,050,421
+Median len:  2,047,854.5
+Mean len:    2,047,854.50
+Readlen N50: 3,050,421
+Total bases: 4,095,709
+
+--- Stats for: assemblies/Iso02566_shortreads_assembly.fasta ---
+Num reads:   274
+Max len:     555,077
+Median len:  130.5
+Mean len:    14,718.85
+Readlen N50: 235,731
+Total bases: 4,032,966
+
+--- Stats for: assemblies/Iso02567_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,962
+Median len:  2,049,034.5
+Mean len:    2,049,034.50
+Readlen N50: 3,052,962
+Total bases: 4,098,069
+
+--- Stats for: assemblies/Iso02567_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,620
+Median len:  2,049,467.0
+Mean len:    2,049,467.00
+Readlen N50: 3,053,620
+Total bases: 4,098,934
+
+--- Stats for: assemblies/Iso02567_shortreads_assembly.fasta ---
+Num reads:   294
+Max len:     555,077
+Median len:  131.5
+Mean len:    13,728.97
+Readlen N50: 235,731
+Total bases: 4,036,318
+
+--- Stats for: assemblies/Iso02568_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,030,553
+Median len:  2,037,830.0
+Mean len:    2,037,830.00
+Readlen N50: 3,030,553
+Total bases: 4,075,660
+
+--- Stats for: assemblies/Iso02568_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,031,027
+Median len:  2,038,142.0
+Mean len:    2,038,142.00
+Readlen N50: 3,031,027
+Total bases: 4,076,284
+
+--- Stats for: assemblies/Iso02568_shortreads_assembly.fasta ---
+Num reads:   289
+Max len:     392,324
+Median len:  131.0
+Mean len:    13,931.26
+Readlen N50: 235,697
+Total bases: 4,026,135
+
+--- Stats for: assemblies/Iso02569_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,936
+Median len:  2,049,020.0
+Mean len:    2,049,020.00
+Readlen N50: 3,052,936
+Total bases: 4,098,040
+
+--- Stats for: assemblies/Iso02569_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,489
+Median len:  2,049,391.5
+Mean len:    2,049,391.50
+Readlen N50: 3,053,489
+Total bases: 4,098,783
+
+--- Stats for: assemblies/Iso02569_shortreads_assembly.fasta ---
+Num reads:   268
+Max len:     555,077
+Median len:  130.5
+Mean len:    15,056.64
+Readlen N50: 246,435
+Total bases: 4,035,180
+
+--- Stats for: assemblies/Iso02570_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,967
+Median len:  2,049,040.5
+Mean len:    2,049,040.50
+Readlen N50: 3,052,967
+Total bases: 4,098,081
+
+--- Stats for: assemblies/Iso02570_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,602
+Median len:  2,049,473.0
+Mean len:    2,049,473.00
+Readlen N50: 3,053,602
+Total bases: 4,098,946
+
+--- Stats for: assemblies/Iso02570_shortreads_assembly.fasta ---
+Num reads:   275
+Max len:     555,077
+Median len:  137.0
+Mean len:    14,674.74
+Readlen N50: 235,727
+Total bases: 4,035,554
+
+--- Stats for: assemblies/Iso02571_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,980
+Median len:  2,056,178.5
+Mean len:    2,056,178.50
+Readlen N50: 3,052,980
+Total bases: 4,112,357
+
+--- Stats for: assemblies/Iso02571_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,669
+Median len:  2,056,641.0
+Mean len:    2,056,641.00
+Readlen N50: 3,053,669
+Total bases: 4,113,282
+
+--- Stats for: assemblies/Iso02571_shortreads_assembly.fasta ---
+Num reads:   268
+Max len:     555,077
+Median len:  137.0
+Mean len:    15,055.47
+Readlen N50: 235,697
+Total bases: 4,034,865
+
+--- Stats for: assemblies/Iso02572_hybrid_assembly.fasta ---
+Num reads:   3
+Max len:     3,062,158
+Median len:  1,045,111.0
+Mean len:    1,370,707.00
+Readlen N50: 3,062,158
+Total bases: 4,112,121
+
+--- Stats for: assemblies/Iso02572_longreads_assembly.fasta ---
+Num reads:   3
+Max len:     3,062,563
+Median len:  1,045,256.0
+Mean len:    1,370,890.33
+Readlen N50: 3,062,563
+Total bases: 4,112,671
+
+--- Stats for: assemblies/Iso02572_shortreads_assembly.fasta ---
+Num reads:   272
+Max len:     555,078
+Median len:  140.5
+Mean len:    14,835.34
+Readlen N50: 235,732
+Total bases: 4,035,212
+
+--- Stats for: assemblies/Iso02573_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,054,600
+Median len:  2,049,853.5
+Mean len:    2,049,853.50
+Readlen N50: 3,054,600
+Total bases: 4,099,707
+
+--- Stats for: assemblies/Iso02573_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,055,030
+Median len:  2,050,157.0
+Mean len:    2,050,157.00
+Readlen N50: 3,055,030
+Total bases: 4,100,314
+
+--- Stats for: assemblies/Iso02573_shortreads_assembly.fasta ---
+Num reads:   265
+Max len:     555,078
+Median len:  139.0
+Mean len:    15,225.25
+Readlen N50: 220,867
+Total bases: 4,034,690
+
+--- Stats for: assemblies/Iso02575_hybrid_assembly.fasta ---
+Num reads:   5
+Max len:     2,025,717
+Median len:  558,740.0
+Mean len:    817,580.40
+Readlen N50: 1,045,117
+Total bases: 4,087,902
+
+--- Stats for: assemblies/Iso02575_longreads_assembly.fasta ---
+Num reads:   5
+Max len:     2,026,334
+Median len:  558,815.0
+Mean len:    817,767.40
+Readlen N50: 1,045,295
+Total bases: 4,088,837
+
+--- Stats for: assemblies/Iso02575_shortreads_assembly.fasta ---
+Num reads:   262
+Max len:     555,077
+Median len:  124.5
+Mean len:    15,364.00
+Readlen N50: 235,697
+Total bases: 4,025,368
+
+--- Stats for: assemblies/Iso02577_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,984
+Median len:  2,056,180.5
+Mean len:    2,056,180.50
+Readlen N50: 3,052,984
+Total bases: 4,112,361
+
+--- Stats for: assemblies/Iso02577_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,479
+Median len:  2,056,518.0
+Mean len:    2,056,518.00
+Readlen N50: 3,053,479
+Total bases: 4,113,036
+
+--- Stats for: assemblies/Iso02577_shortreads_assembly.fasta ---
+Num reads:   272
+Max len:     392,248
+Median len:  132.5
+Mean len:    14,837.47
+Readlen N50: 235,697
+Total bases: 4,035,793
+
+--- Stats for: assemblies/Iso02579_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,054,782
+Median len:  2,049,943.0
+Mean len:    2,049,943.00
+Readlen N50: 3,054,782
+Total bases: 4,099,886
+
+--- Stats for: assemblies/Iso02579_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,055,554
+Median len:  2,050,412.5
+Mean len:    2,050,412.50
+Readlen N50: 3,055,554
+Total bases: 4,100,825
+
+--- Stats for: assemblies/Iso02579_shortreads_assembly.fasta ---
+Num reads:   282
+Max len:     392,571
+Median len:  130.0
+Mean len:    14,311.77
+Readlen N50: 189,546
+Total bases: 4,035,920
+
+--- Stats for: assemblies/Iso02580_hybrid_assembly.fasta ---
+Num reads:   5
+Max len:     2,607,315
+Median len:  285,647.0
+Mean len:    819,996.00
+Readlen N50: 2,607,315
+Total bases: 4,099,980
+
+--- Stats for: assemblies/Iso02580_longreads_assembly.fasta ---
+Num reads:   5
+Max len:     2,607,708
+Median len:  285,796.0
+Mean len:    820,151.40
+Readlen N50: 2,607,708
+Total bases: 4,100,757
+
+--- Stats for: assemblies/Iso02580_shortreads_assembly.fasta ---
+Num reads:   287
+Max len:     555,077
+Median len:  132.0
+Mean len:    14,063.36
+Readlen N50: 235,730
+Total bases: 4,036,185
+
+--- Stats for: assemblies/Iso02581_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,046,763
+Median len:  2,045,931.0
+Mean len:    2,045,931.00
+Readlen N50: 3,046,763
+Total bases: 4,091,862
+
+--- Stats for: assemblies/Iso02581_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,047,230
+Median len:  2,046,422.5
+Mean len:    2,046,422.50
+Readlen N50: 3,047,230
+Total bases: 4,092,845
+
+--- Stats for: assemblies/Iso02581_shortreads_assembly.fasta ---
+Num reads:   290
+Max len:     392,574
+Median len:  135.0
+Mean len:    13,916.72
+Readlen N50: 210,883
+Total bases: 4,035,849
+
+--- Stats for: assemblies/Iso02582_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,986
+Median len:  2,049,048.5
+Mean len:    2,049,048.50
+Readlen N50: 3,052,986
+Total bases: 4,098,097
+
+--- Stats for: assemblies/Iso02582_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,474
+Median len:  2,049,371.5
+Mean len:    2,049,371.50
+Readlen N50: 3,053,474
+Total bases: 4,098,743
+
+--- Stats for: assemblies/Iso02582_shortreads_assembly.fasta ---
+Num reads:   267
+Max len:     555,076
+Median len:  132.0
+Mean len:    15,111.44
+Readlen N50: 246,605
+Total bases: 4,034,755
+
+--- Stats for: assemblies/Iso02583_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     2,966,134
+Median len:  2,010,072.0
+Mean len:    2,010,072.00
+Readlen N50: 2,966,134
+Total bases: 4,020,144
+
+--- Stats for: assemblies/Iso02583_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     2,966,199
+Median len:  2,010,108.0
+Mean len:    2,010,108.00
+Readlen N50: 2,966,199
+Total bases: 4,020,216
+
+--- Stats for: assemblies/Iso02583_shortreads_assembly.fasta ---
+Num reads:   406
+Max len:     281,483
+Median len:  113.0
+Mean len:    9,683.81
+Readlen N50: 125,028
+Total bases: 3,931,627
+
+--- Stats for: assemblies/Iso02584_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,978
+Median len:  2,049,043.5
+Mean len:    2,049,043.50
+Readlen N50: 3,052,978
+Total bases: 4,098,087
+
+--- Stats for: assemblies/Iso02584_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,465
+Median len:  2,049,369.0
+Mean len:    2,049,369.00
+Readlen N50: 3,053,465
+Total bases: 4,098,738
+
+--- Stats for: assemblies/Iso02584_shortreads_assembly.fasta ---
+Num reads:   269
+Max len:     555,077
+Median len:  133.0
+Mean len:    15,002.90
+Readlen N50: 246,339
+Total bases: 4,035,780
+
+--- Stats for: assemblies/Iso02585_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,041,709
+Median len:  2,043,406.0
+Mean len:    2,043,406.00
+Readlen N50: 3,041,709
+Total bases: 4,086,812
+
+--- Stats for: assemblies/Iso02585_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,042,202
+Median len:  2,043,740.0
+Mean len:    2,043,740.00
+Readlen N50: 3,042,202
+Total bases: 4,087,480
+
+--- Stats for: assemblies/Iso02585_shortreads_assembly.fasta ---
+Num reads:   257
+Max len:     555,077
+Median len:  139.0
+Mean len:    15,698.20
+Readlen N50: 235,697
+Total bases: 4,034,437
+
+--- Stats for: assemblies/Iso02586_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,977
+Median len:  2,049,040.0
+Mean len:    2,049,040.00
+Readlen N50: 3,052,977
+Total bases: 4,098,080
+
+--- Stats for: assemblies/Iso02586_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,476
+Median len:  2,049,371.5
+Mean len:    2,049,371.50
+Readlen N50: 3,053,476
+Total bases: 4,098,743
+
+--- Stats for: assemblies/Iso02586_shortreads_assembly.fasta ---
+Num reads:   255
+Max len:     555,077
+Median len:  127.0
+Mean len:    15,824.06
+Readlen N50: 246,339
+Total bases: 4,035,135
+
+--- Stats for: assemblies/Iso02587_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,050,258
+Median len:  2,047,689.5
+Mean len:    2,047,689.50
+Readlen N50: 3,050,258
+Total bases: 4,095,379
+
+--- Stats for: assemblies/Iso02587_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,050,696
+Median len:  2,047,989.0
+Mean len:    2,047,989.00
+Readlen N50: 3,050,696
+Total bases: 4,095,978
+
+--- Stats for: assemblies/Iso02587_shortreads_assembly.fasta ---
+Num reads:   259
+Max len:     555,077
+Median len:  133.0
+Mean len:    15,578.01
+Readlen N50: 246,338
+Total bases: 4,034,704
+
+--- Stats for: assemblies/Iso02588_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,964
+Median len:  2,049,042.5
+Mean len:    2,049,042.50
+Readlen N50: 3,052,964
+Total bases: 4,098,085
+
+--- Stats for: assemblies/Iso02588_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,454
+Median len:  2,049,362.5
+Mean len:    2,049,362.50
+Readlen N50: 3,053,454
+Total bases: 4,098,725
+
+--- Stats for: assemblies/Iso02588_shortreads_assembly.fasta ---
+Num reads:   288
+Max len:     555,077
+Median len:  130.0
+Mean len:    14,013.97
+Readlen N50: 246,607
+Total bases: 4,036,022
+
+--- Stats for: assemblies/Iso02589_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,104,903
+Median len:  2,075,010.5
+Mean len:    2,075,010.50
+Readlen N50: 3,104,903
+Total bases: 4,150,021
+
+--- Stats for: assemblies/Iso02589_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,105,364
+Median len:  2,075,311.5
+Mean len:    2,075,311.50
+Readlen N50: 3,105,364
+Total bases: 4,150,623
+
+--- Stats for: assemblies/Iso02589_shortreads_assembly.fasta ---
+Num reads:   251
+Max len:     555,078
+Median len:  132.0
+Mean len:    16,075.90
+Readlen N50: 235,731
+Total bases: 4,035,052
+
+--- Stats for: assemblies/Iso02590_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,985
+Median len:  2,049,056.5
+Mean len:    2,049,056.50
+Readlen N50: 3,052,985
+Total bases: 4,098,113
+
+--- Stats for: assemblies/Iso02590_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,459
+Median len:  2,049,365.5
+Mean len:    2,049,365.50
+Readlen N50: 3,053,459
+Total bases: 4,098,731
+
+--- Stats for: assemblies/Iso02590_shortreads_assembly.fasta ---
+Num reads:   281
+Max len:     555,077
+Median len:  129.0
+Mean len:    14,361.97
+Readlen N50: 246,338
+Total bases: 4,035,714
+
+--- Stats for: assemblies/Iso02591_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,047,263
+Median len:  2,046,192.0
+Mean len:    2,046,192.00
+Readlen N50: 3,047,263
+Total bases: 4,092,384
+
+--- Stats for: assemblies/Iso02591_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,048,107
+Median len:  2,046,692.5
+Mean len:    2,046,692.50
+Readlen N50: 3,048,107
+Total bases: 4,093,385
+
+--- Stats for: assemblies/Iso02591_shortreads_assembly.fasta ---
+Num reads:   266
+Max len:     555,077
+Median len:  134.5
+Mean len:    15,172.46
+Readlen N50: 235,698
+Total bases: 4,035,874
+
+--- Stats for: assemblies/Iso02592_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,980
+Median len:  2,049,707.0
+Mean len:    2,049,707.00
+Readlen N50: 3,052,980
+Total bases: 4,099,414
+
+--- Stats for: assemblies/Iso02592_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,439
+Median len:  2,050,012.5
+Mean len:    2,050,012.50
+Readlen N50: 3,053,439
+Total bases: 4,100,025
+
+--- Stats for: assemblies/Iso02592_shortreads_assembly.fasta ---
+Num reads:   254
+Max len:     555,077
+Median len:  140.0
+Mean len:    15,884.43
+Readlen N50: 235,730
+Total bases: 4,034,644
+
+--- Stats for: assemblies/Iso02593_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,975
+Median len:  2,049,044.0
+Mean len:    2,049,044.00
+Readlen N50: 3,052,975
+Total bases: 4,098,088
+
+--- Stats for: assemblies/Iso02593_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,489
+Median len:  2,049,380.5
+Mean len:    2,049,380.50
+Readlen N50: 3,053,489
+Total bases: 4,098,761
+
+--- Stats for: assemblies/Iso02593_shortreads_assembly.fasta ---
+Num reads:   293
+Max len:     555,077
+Median len:  130.0
+Mean len:    13,772.67
+Readlen N50: 246,606
+Total bases: 4,035,393
+
+--- Stats for: assemblies/Iso02594_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,982
+Median len:  2,049,075.0
+Mean len:    2,049,075.00
+Readlen N50: 3,052,982
+Total bases: 4,098,150
+
+--- Stats for: assemblies/Iso02594_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,500
+Median len:  2,049,421.0
+Mean len:    2,049,421.00
+Readlen N50: 3,053,500
+Total bases: 4,098,842
+
+--- Stats for: assemblies/Iso02594_shortreads_assembly.fasta ---
+Num reads:   272
+Max len:     555,076
+Median len:  129.5
+Mean len:    14,835.02
+Readlen N50: 246,606
+Total bases: 4,035,125
+
+--- Stats for: assemblies/Iso02595_hybrid_assembly.fasta ---
+Num reads:   2
+Max len:     3,052,728
+Median len:  2,056,069.0
+Mean len:    2,056,069.00
+Readlen N50: 3,052,728
+Total bases: 4,112,138
+
+--- Stats for: assemblies/Iso02595_longreads_assembly.fasta ---
+Num reads:   2
+Max len:     3,053,196
+Median len:  2,056,385.0
+Mean len:    2,056,385.00
+Readlen N50: 3,053,196
+Total bases: 4,112,770
+
+--- Stats for: assemblies/Iso02595_shortreads_assembly.fasta ---
+Num reads:   269
+Max len:     595,171
+Median len:  130.0
+Mean len:    15,000.64
+Readlen N50: 246,339
+Total bases: 4,035,171
+
+--- Stats for: assemblies/Iso02597_hybrid_assembly.fasta ---
+Num reads:   3
+Max len:     3,059,372
+Median len:  1,059,396.0
+Mean len:    1,376,656.33
+Readlen N50: 3,059,372
+Total bases: 4,129,969
+
+--- Stats for: assemblies/Iso02597_longreads_assembly.fasta ---
+Num reads:   3
+Max len:     3,059,864
+Median len:  1,059,571.0
+Mean len:    1,376,879.00
+Readlen N50: 3,059,864
+Total bases: 4,130,637
+
+--- Stats for: assemblies/Iso02597_shortreads_assembly.fasta ---
+Num reads:   249
+Max len:     555,152
+Median len:  137.0
+Mean len:    16,201.31
+Readlen N50: 246,339
+Total bases: 4,034,126
+

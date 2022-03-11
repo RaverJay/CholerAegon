@@ -1,0 +1,944 @@
+<!DOCTYPE html><html><head>
+<title>Comparison to Madrid results</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif
+}
+
+.content {
+max-width: 1700px;
+margin: auto;
+}
+
+table.tablestyle {
+background-color: #FFFFFF;
+width: 1000px;
+text-align: center;
+border-collapse: collapse;
+}
+table.tablestyle td, table.tablestyle th {
+border: 2px solid #8B8B8B;
+padding: 5px 5px;
+}
+table.tablestyle tbody td {
+font-size: 20px;
+color: #000000;
+}
+# table.tablestyle tr:nth-child(even) {
+# background: #E6F5FF;
+# }
+table.tablestyle thead {
+background: #E6F5FF;
+}
+table.tablestyle thead th {
+font-size: 20px;
+font-weight: bold;
+color: #000000;
+text-align: center;
+}
+table.tablestyle tfoot td {
+font-size: 13px;
+}
+table.tablestyle tfoot .links {
+text-align: right;
+}
+table.tablestyle tfoot .links a{
+display: inline-block;
+background: #FFFFFF;
+color: #398AA4;
+padding: 2px 8px;
+border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+<div class="content"><h1 class="header" id="main-header">Comparison to Madrid results</h1>
+<table border="1" class="dataframe tablestyle">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>AMP
+ampicillin</th>
+      <th>C
+chloramphenicol</th>
+      <th>CIP
+ciprofloxacin</th>
+      <th>CN
+gentamicin A</th>
+      <th>TE
+tetracycline</th>
+      <th>SxT
+trimethoprim-sulfamethoxazole</th>
+      <th>NA
+nalidixic acid</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genes conferring resistances</td>
+      <td>-</td>
+      <td>catB9, floR</td>
+      <td>Escherichia coli parE conferring resistance to fluoroquinolones</td>
+      <td>-</td>
+      <td>-</td>
+      <td>dfrA1 (trimethoprim), sul2 (sulfamethoxazole)</td>
+      <td>Escherichia coli parE conferring resistance to fluoroquinolones</td>
+    </tr>
+    <tr>
+      <td>Prediction correctness</td>
+      <td><b><font color="#046907">25%</font> <font color="#a50500">75%</font></b></td>
+      <td><b><font color="#046907">4%</font> <font color="#a50500">96%</font></b></td>
+      <td><b><font color="#046907">78%</font> <font color="#a50500">22%</font></b></td>
+      <td><b><font color="#046907">100%</font> <font color="#a50500">0%</font></b></td>
+      <td><b><font color="#046907">100%</font> <font color="#a50500">0%</font></b></td>
+      <td><b><font color="#046907">94%</font> <font color="#a50500">6%</font></b></td>
+      <td><b><font color="#046907">79%</font> <font color="#a50500">21%</font></b></td>
+    </tr>
+    <tr>
+      <td>Correct</td>
+      <td><b><font color="None"><b><font color="#046907">20</font></font></b></td>
+      <td><b><font color="None"><b><font color="#046907">3</font></font></b></td>
+      <td><b><font color="None"><b><font color="#046907">62</font></font></b></td>
+      <td><b><font color="None"><b><font color="#046907">20</font></font></b></td>
+      <td><b><font color="None"><b><font color="#046907">80</font></font></b></td>
+      <td><b><font color="None"><b><font color="#046907">75</font></font></b></td>
+      <td><b><font color="None"><b><font color="#046907">63</font></font></b></td>
+    </tr>
+    <tr>
+      <td>False</td>
+      <td><b><font color="None"><b><font color="#a50500">60</font></font></b></td>
+      <td><b><font color="None"><b><font color="#a50500">77</font></font></b></td>
+      <td><b><font color="None"><b><font color="#a50500">18</font></font></b></td>
+      <td><b><font color="None"><b><font color="#a50500">0</font></font></b></td>
+      <td><b><font color="None"><b><font color="#a50500">0</font></font></b></td>
+      <td><b><font color="None"><b><font color="#a50500">5</font></font></b></td>
+      <td><b><font color="None"><b><font color="#a50500">17</font></font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02501</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02502</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02503</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02504</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02506</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#a50500">R_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02507</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02508</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02509</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02510</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02511</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02512</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02513</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02514</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02515</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02517</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02518</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02519</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02520</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02522</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02523</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02524</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02525</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02527</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02529</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02532</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02533</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02534</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02535</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02536</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02537</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02538</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02539</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02541</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02542</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02544</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02545</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02546</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02547</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02549</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02550</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02551</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#a50500">R_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02552</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02553</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02554</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02555</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02556</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02557</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02558</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02559</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02560</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02561</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02563</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02564</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02565</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02566</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02567</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02568</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#a50500">R_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02569</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02570</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02571</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02572</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02573</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02575</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#a50500">R_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02577</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02579</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02580</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02581</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02582</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02583</td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#a50500">R_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02584</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02585</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02586</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02587</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02588</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02589</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02590</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02591</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02592</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02593</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02594</td>
+      <td><b><font color="#a50500">I_no</font></b></td>
+      <td><b><font color="#8a006d">S_yes</font></b></td>
+      <td><b><font color="#046907">SD_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="#046907">S_no</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+      <td><b><font color="#046907">R_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02595</td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="None">nodata_yes</font></b></td>
+      <td><b><font color="None">nodata_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="None">nodata_yes</font></b></td>
+      <td><b><font color="None">nodata_yes</font></b></td>
+    </tr>
+    <tr>
+      <td>Iso02597</td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="None">nodata_yes</font></b></td>
+      <td><b><font color="None">nodata_yes</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="None">nodata_no</font></b></td>
+      <td><b><font color="None">nodata_yes</font></b></td>
+      <td><b><font color="None">nodata_yes</font></b></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</body></html>
