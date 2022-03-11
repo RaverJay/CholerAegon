@@ -1,0 +1,4 @@
+work
+.nextflow*
+nf_downloads
+result*
