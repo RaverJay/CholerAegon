@@ -51,6 +51,10 @@ sample2_name,s2_nanopore_reads.fq,s2_short_reads_pair1.fq.gz,s2_short_reads_pair
 
 etc
 
+## Pipeline overview
+
+![Pipeline diagram of CholerAegon](https://github.com/RaverJay/CholerAegon/blob/main/figures/pipeline_github.png)
+
 
 
 ## What's with the name?
