@@ -38,6 +38,7 @@ if (params.genome_reference) {
 
 process concat_fastq {
 
+    label 'base'
     cpus = 1
     input:
         tuple val(name), val(fastqs)
@@ -58,6 +59,7 @@ process concat_fastq {
 
 process prepare_fasta {
 
+    label 'base'
     cpus = 1
     input:
         tuple val(name), path(fasta)
@@ -274,6 +276,7 @@ process resistance_gene_identifier {
 
 process aggregate_rgi_results {
 
+    label 'base'
     cpus = 1
     publishDir "${params.output}/", mode: 'copy'
 
@@ -324,6 +327,7 @@ process aggregate_abricate_results {
 
 process combine_results {
 
+    label 'base'
     cpus = 1
     publishDir "${params.output}/sample_results/${name}/AMR/", mode: 'copy'
 
@@ -340,6 +344,7 @@ process combine_results {
 
 process aggregate_combined_results {
 
+    label 'base'
     cpus = 1
     publishDir "${params.output}/", mode: 'copy'
 
@@ -356,6 +361,7 @@ process aggregate_combined_results {
 
 process predict_resistances {
 
+    label 'base'
     cpus = 1
     publishDir "${params.output}/", mode: 'copy'
 

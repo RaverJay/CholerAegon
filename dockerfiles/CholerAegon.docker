@@ -4,9 +4,10 @@ RUN apt update && apt install -y procps wget gzip && apt-get clean && rm -rf /va
 
 RUN conda update -n base -c defaults conda
 RUN conda config --add channels default && \
+    conda config --add channels biobuilds && \
     conda config --add channels bioconda && \
     conda config --add channels conda-forge
  
-RUN conda install mamba
-RUN mamba install pandas obonet openpyxl
-RUN conda clean -a
+RUN conda install -y mamba
+RUN mamba install -y pandas openpyxl obonet
+RUN conda clean -y -a
