@@ -384,7 +384,7 @@ class SummaryReport():
 
         self.add_column('FastANI %', res_data['ani_value'])
 
-        self.add_col_description('ANI% was determined with <a href="https://github.com/ParBLiSS/FastANI">FastANI</a> against "Vibrio cholerae O1 biovar El Tor str. N16961" (<a href="https://www.ncbi.nlm.nih.gov/genome/?term=NC_002505.1">NC_002505.1</a>).')
+        self.add_col_description('ANI% was determined with <a href="https://github.com/ParBLiSS/FastANI">FastANI</a> against the supplied genome reference.')
 
 
 
