@@ -41,7 +41,7 @@ process concat_fastq {
     label 'base'
     cpus = 1
     input:
-        tuple val(name), val(fastqs)
+        tuple val(name), val(fastqs), file(folder_to_mount)
     output:
         tuple val(name), path("${name}_concat.fastq")
     shell:
@@ -577,7 +577,7 @@ workflow {
                                 file("${row[2]}", checkIfExists: true), file("${row[3]}", checkIfExists: true)] }
                     // csv table with columns:  samplename, longreads, illumina_p1, illumina_p2
 
-                longread_input_ch = concat_fastq( samples_input_ch.map{ it -> [it[0], file(it[1])] } )
+                longread_input_ch = concat_fastq( samples_input_ch.map{ it -> [it[0], it[1], file(it[1]).parent] } )
                 shortread_input_ch = fastp( samples_input_ch.map{ it -> [it[0], it[2], it[3]] } )
 
                 hybrid_assembly_wf( longread_input_ch, shortread_input_ch )
