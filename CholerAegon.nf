@@ -201,7 +201,7 @@ process unicycler {
     cpus = "${params.cpus}"
     memory = "${params.memory}"
 
-    publishDir "${params.output}/sample_results/${name}/${type}", mode: 'copy', pattern: 'pilon_polishing'
+    publishDir "${params.output}/sample_results/${name}/${type}", mode: 'copy', pattern: 'unicycler_assembly'
     publishDir "${params.output}/sample_results/${name}/", mode: 'copy', pattern: "${name}_${type}_assembly.fasta"
 
     input:
