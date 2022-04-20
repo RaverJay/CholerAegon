@@ -195,6 +195,28 @@ process spades_denovo {
 // hybrid
 
 
+process unicycler {
+
+    label 'unicycler'
+    cpus = "${params.cpus}"
+    memory = "${params.memory}"
+
+    publishDir "${params.output}/sample_results/${name}/${type}", mode: 'copy', pattern: 'pilon_polishing'
+    publishDir "${params.output}/sample_results/${name}/", mode: 'copy', pattern: "${name}_${type}_assembly.fasta"
+
+    input:
+        tuple val(name), val(type), path(shortreads_p1), path(shortreads_p2), path(longreads)
+    output:
+        tuple val(name), val(type), path("unicycler_assembly")
+        tuple val(name), val(type), path("${name}_${type}_assembly.fasta"), emit: assembly
+    script:
+        """
+        unicycler -1 ${shortreads_p1} -2 ${shortreads_p2} -l ${longreads} -o unicycler_assembly
+        cp unicycler_assembly/assembly.fasta ${name}_${type}_assembly.fasta
+        """
+}
+
+
 process bwamem2_paired {
 
     label 'bwamem2'
@@ -460,18 +482,16 @@ workflow shortread_assembly_wf {
 workflow hybrid_assembly_wf {
 
     take:
-        longreads_assembly
+        longreads
         shortreads
 
     main:
-        // pilon hybrid polish
-        input_bwa = shortreads.join( longreads_assembly.map{ it -> [ it[0], it[2] ] } )
-        input_pilon = samtools_bam( bwamem2_paired( input_bwa ) ).join( longreads_assembly.map{ it -> [ it[0], it[2] ] } )
-        input_pilon_type = input_pilon.map{ it -> [ it[0], 'hybrid', it[1], it[2], it[3] ] }
-        pilon( input_pilon_type )
+        // unicycler
+        input_unicycler_type = shortreads.join( longreads ).map{ it -> [ it[0], 'hybrid', it[1], it[2], it[3] ] }
+        unicycler( input_unicycler_type )
 
     emit:
-        pilon.out.assembly
+        unicycler.out.assembly
 }
 
 
@@ -557,16 +577,16 @@ workflow {
                                 file("${row[2]}", checkIfExists: true), file("${row[3]}", checkIfExists: true)] }
                     // csv table with columns:  samplename, longreads, illumina_p1, illumina_p2
 
-                longread_input_ch = concat_fastq( samples_input_ch.map{ it -> [it[0], it[1]] } )
+                longread_input_ch = concat_fastq( samples_input_ch.map{ it -> [it[0], file(it[1])] } )
                 shortread_input_ch = fastp( samples_input_ch.map{ it -> [it[0], it[2], it[3]] } )
 
-                longread_assembly_wf( longread_input_ch )
-                hybrid_assembly_wf( longread_assembly_wf.out, shortread_input_ch )
+                hybrid_assembly_wf( longread_input_ch, shortread_input_ch )
 
                 if (! params.do_all_assemblies) {
                     assemblies_ch = hybrid_assembly_wf.out
                 }
                 else {
+                    longread_assembly_wf( longread_input_ch )
                     shortread_assembly_wf( shortread_input_ch )
                     assemblies_ch = hybrid_assembly_wf.out.mix( longread_assembly_wf.out ).mix( shortread_assembly_wf.out )
                 }
