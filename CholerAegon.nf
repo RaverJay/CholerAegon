@@ -36,6 +36,8 @@ if (params.genome_reference) {
 ////
 // preprocess
 
+
+
 process concat_fastq {
 
     label 'base'
@@ -195,13 +197,38 @@ process spades_denovo {
 // hybrid
 
 
+process masurca {
+
+    label 'masurca'
+    cpus = "${params.cpus}"
+    memory = "${params.memory}"
+
+    publishDir "${params.output}/sample_results/${name}/${type}", mode: 'copy', pattern: 'masurca_assembly'
+    publishDir "${params.output}/sample_results/${name}/", mode: 'copy', pattern: "${name}_${type}_assembly.fasta"
+
+    input:
+        tuple val(name), val(type), path(shortreads_p1), path(shortreads_p2), path(longreads)
+    output:
+        tuple val(name), val(type), path("masurca_assembly")
+        tuple val(name), val(type), path("${name}_${type}_assembly.fasta"), emit: assembly
+    script:
+        """
+        masurca -t ${params.cpus} -i ${shortreads_p1},${shortreads_p2} -r ${longreads}
+        cp CA/{primary,alternative}.scf.fasta ${name}_${type}_assembly.fasta
+        mv CA masurca_assembly
+        """
+}
+
+
+
+
 process unicycler {
 
     label 'unicycler'
     cpus = "${params.cpus}"
     memory = "${params.memory}"
 
-    publishDir "${params.output}/sample_results/${name}/${type}", mode: 'copy', pattern: 'pilon_polishing'
+    publishDir "${params.output}/sample_results/${name}/${type}", mode: 'copy', pattern: 'unicycler_assembly'
     publishDir "${params.output}/sample_results/${name}/", mode: 'copy', pattern: "${name}_${type}_assembly.fasta"
 
     input:
@@ -486,12 +513,12 @@ workflow hybrid_assembly_wf {
         shortreads
 
     main:
-        // unicycler
-        input_unicycler_type = shortreads.join( longreads ).map{ it -> [ it[0], 'hybrid', it[1], it[2], it[3] ] }
-        unicycler( input_unicycler_type )
+        // masurca
+        input_masurca_type = shortreads.join( longreads ).map{ it -> [ it[0], 'hybrid', it[1], it[2], it[3] ] }
+        masurca( input_masurca_type )
 
     emit:
-        unicycler.out.assembly
+        masurca.out.assembly
 }
 
 
@@ -578,7 +605,8 @@ workflow {
                     // csv table with columns:  samplename, longreads, illumina_p1, illumina_p2
 
                 longread_input_ch = concat_fastq( samples_input_ch.map{ it -> [it[0], it[1], file(it[1]).parent] } )
-                shortread_input_ch = fastp( samples_input_ch.map{ it -> [it[0], it[2], it[3]] } )
+                // skip fastp for masurca
+                shortread_input_ch = samples_input_ch.map{ it -> [it[0], it[2], it[3]] }
 
                 hybrid_assembly_wf( longread_input_ch, shortread_input_ch )
 
