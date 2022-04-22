@@ -13,8 +13,8 @@ params.shortreads = false
 
 params.do_all_assemblies = false
 
-params.min_coverage_percent = 80.
-params.min_identity_percent = 80.
+params.min_coverage_percent = 80
+params.min_identity_percent = 80
 
 
 // channels
