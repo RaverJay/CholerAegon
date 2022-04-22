@@ -13,6 +13,9 @@ params.shortreads = false
 
 params.do_all_assemblies = false
 
+params.min_coverage_percent = 80.
+params.min_identity_percent = 80.
+
 
 // channels
 
@@ -337,7 +340,11 @@ process combine_results {
         tuple val(name), val(type), path("${name}_${type}_combined_results.csv")
     script:
         """
-        combine_results.py --rgi_results ${rgi_results} --abricate_results ${abricate_results} --output ${name}_${type}_combined_results
+        combine_results.py --rgi_results ${rgi_results} \
+            --abricate_results ${abricate_results} \
+            --output ${name}_${type}_combined_results \
+            --coverage_threshold ${params.min_coverage_percent} \
+            --identity_threshold ${params.min_identity_percent}
         """
 }
 
