@@ -6,10 +6,13 @@ nextflow.enable.dsl=2
 
 
 // defaults, these are overridden by the 'nextflow run' invocation on the command line
+params.output = 'results_choleraegon'
+params.update_card = false
 params.fasta = false
 params.samples = false
 params.longreads = false
 params.shortreads = false
+params.genome_reference = false
 
 params.do_all_assemblies = false
 
@@ -35,6 +38,32 @@ if (params.genome_reference) {
 ///////////////////
 //// Processes ////
 ///////////////////
+
+
+////
+// update CARD
+
+process update_card {
+
+    label 'rgi'
+    cpus = 1
+    output:
+        tuple path('card.json'), path('aro.obo'), path('localDB'), path('UPDATE_TIMESTAMP')
+    publishDir "${workflow.projectDir}/data/CARD/", mode: 'copy'
+    script:
+        """
+        wget https://card.mcmaster.ca/latest/ontology -O card-ontology.tar.bz2
+        tar xf card-ontology.tar.bz2
+        
+        wget https://card.mcmaster.ca/latest/data -O card-data.tar.bz2
+        tar xf card-data.tar.bz2
+
+        rgi load --card_json card.json --local
+
+        touch UPDATE_TIMESTAMP
+        """
+}
+
 
 ////
 // preprocess
@@ -540,6 +569,14 @@ workflow create_summary_report_wf {
 workflow {
     main:
 
+        /////////////////
+        // Update CARD //
+        /////////////////
+
+        if (params.update_card) {
+            update_card()
+        }
+
         //////////////
         // Assembly //
         //////////////
@@ -623,24 +660,26 @@ workflow {
         // AMR detection //
         ///////////////////
 
-        // detect genes
-        res_gene_detection_wf( assemblies_ch )
+        if ( params.fasta || params.samples || params.longreads || params.shortreads ) {
 
-        // predict drug resistances
-        res_prediction_wf( res_gene_detection_wf.out, card_ontology_obo_ch )
+            // detect genes
+            res_gene_detection_wf( assemblies_ch )
+
+            // predict drug resistances
+            res_prediction_wf( res_gene_detection_wf.out, card_ontology_obo_ch )
 
 
-        /////////////
-        // Summary //
-        /////////////
+            /////////////
+            // Summary //
+            /////////////
 
-        if (params.genome_reference) {
-            ani_result_ch = fastani( assemblies_ch.map{ it -> it[2] }.collect(), genome_reference_ch )
-        } else {
-            ani_result_ch = Channel.from( ['deactivated'] )
+            if (params.genome_reference) {
+                ani_result_ch = fastani( assemblies_ch.map{ it -> it[2] }.collect(), genome_reference_ch )
+            } else {
+                ani_result_ch = Channel.from( ['deactivated'] )
+            }
+
+            create_summary_report_wf( res_prediction_wf.out, ani_result_ch )
         }
-
-        create_summary_report_wf( res_prediction_wf.out, ani_result_ch )
-
 
 }
