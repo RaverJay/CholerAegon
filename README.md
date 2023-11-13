@@ -47,11 +47,16 @@ sample2_name,s2_nanopore_reads.fq,s2_short_reads_pair1.fq.gz,s2_short_reads_pair
 ## Additional parameters
 
 ```
---fasta <assembly/assemblies>       supply pre-assembled genomes instead of read data, do only AMR detection
---genome_reference <reference>      optionally supply a genome reference for the analyzed pathogen, will produce %ANI values for all assemblies
---min_coverage_percent              specify minimum percentage of covered bases for an AMR gene to be considered present (default 80)
---min_identity_percent              specify minimum percentage of identitical bases for an AMR gene to be considered present (default 80)
---do_all_assemblies                 do not skip short-read-only and long-read-only assemblies in hybrid mode (default off)
+--fasta <assembly/assemblies>       supply pre-assembled genomes instead of read data,
+                                      do only AMR detection
+--genome_reference <reference>      optionally supply a genome reference for the analyzed pathogen,
+                                      will produce %ANI values for all assemblies
+--min_coverage_percent              specify minimum percentage of covered bases for an AMR gene
+                                      to be considered present (default 80)
+--min_identity_percent              specify minimum percentage of identitical bases for an AMR gene
+                                      to be considered present (default 80)
+--do_all_assemblies                 do not skip short-read-only and long-read-only
+                                      assemblies in hybrid mode (default off)
 ```
 
 ## Pipeline overview
