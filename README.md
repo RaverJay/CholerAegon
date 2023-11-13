@@ -12,7 +12,7 @@ conda activate choleraegon
 ```
 
 Required parameters:
-* pick a release revision of this repository with `-r`, e.g. `-r 0.1.0`
+* pick a release revision of this repository with `-r`, e.g. `-r 0.3.0`
 * pick your executor (local, slurm, etc) and engine (singularity) with `-profile`, e.g. `-profile local,singularity`
 * supply read data with `--samples`, `--longreads`, `--shortreads` or `--fasta`
 
@@ -22,15 +22,15 @@ Optional parameters:
 
 ## Examples
 
-* run on Nanopore reads
+* run on Nanopore reads (one .fq file per sample)
 ```
 nextflow run RaverJay/CholerAegon -r 0.2.0 -profile local,singularity \
 --longreads 'sample_lr_*.fq' --genome_reference my_pathogen.fa --output results_lr
 ```
-* run on short reads
+* run on short paired-end reads (supply the filename pattern in quotes, with a '*' and '{1,2}')
 ```
 nextflow run RaverJay/CholerAegon -r 0.2.0 -profile local,singularity \
---shortreads 'sample_sr_*.fq' --genome_reference my_pathogen.fa --output results_sr
+--shortreads 'sample_sr_ID*_{1,2}.fq' --genome_reference my_pathogen.fa --output results_sr
 ```
 * run hybrid assembly with both long and short reads
 ```
