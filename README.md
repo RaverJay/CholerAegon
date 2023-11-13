@@ -20,7 +20,6 @@ Optional parameters:
 * supply a genome reference with `--genome_reference` to get average nucleotide identity values for the assemblies
 * specify the output folder with `--output` (default `results_CholerAegon`)
 * add `--update_card` (or use stand-alone) to download the newest [CARD](https://card.mcmaster.ca/home) resistance database data
-* add `--output <folder>` to specify the output folder (default `results_choleraegon`)
 
 ## Examples
 
