@@ -596,9 +596,8 @@ workflow {
                 // TODO unpaired input
                 if (params.shortreads) {
                     shortread_input_raw_ch = Channel
-                        .fromPath( params.longreads, checkIfExists: true)
-                        .map { file -> tuple(file.simpleName, file) }
-                        // samplename, shortreads
+                        .fromFilePairs( params.shortreads, checkIfExists: true, flat: true)
+                        // samplename, shortreads_p1, shortreads_p2
 
                     shortread_input_ch = fastp ( shortread_input_raw_ch )
                 }
