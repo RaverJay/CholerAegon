@@ -42,11 +42,11 @@ accs_dict = {}
 names_dict = {}
 
 for node in obo.nodes(data=True):
-    acc = node[0]
+    gene_acc = node[0]
     name = node[1]['name']
 
-    accs_dict[name] = acc
-    names_dict[acc] = name
+    accs_dict[name] = gene_acc
+    names_dict[gene_acc] = name
 
 def get_acc(name):
     return accs_dict[name]
@@ -92,36 +92,85 @@ else:
     for row in data.index:
         # print(row)
         
-        resisted_drugs_acc = {}
-        resisted_drug_classes_acc = {}
+
+        ## get genes and check for multiple component genes
+        resistance_genes_acc = []
+        multi_genes_acc = {}
         
         
-        # collect resistances
         for gene in cols_amr:
-
             if data.loc[row, gene] != '.':
-            
-                acc = get_acc(gene)
 
-                # find potential resistances by
-                # selecting checking edges to parent nodes
-                for child, parent, key in obo.out_edges(acc, keys=True):
+                gene_acc = get_acc(gene)
+                resistance_genes_acc.append(gene_acc)
 
-                    if key == 'confers_resistance_to_antibiotic':
+                # find potential multi genes by
+                # checking edges to parent nodes
+                for child, parent, key in obo.out_edges(gene_acc, keys=True):
+
+                    if key == 'part_of':
                         
                         # print(f'• {get_name(child)} ⟶ {key} ⟶ {get_name(parent)}')
-                        if parent not in resisted_drugs_acc:
-                            resisted_drugs_acc[parent] = []
+                        multi_genes_acc[parent] = []
+
+
+        # check multigene candidates
+        for multi_gene_acc in multi_genes_acc:
+            parts_acc = []
+            has_all = True
+
+            for child, parent, key in obo.in_edges(multi_gene_acc, keys=True):
+
+                if key == 'part_of':
+
+                    # print(f'• {get_name(child)} ⟶ {key} ⟶ {get_name(parent)}')
+                    if child in resistance_genes_acc:
+                        parts_acc.append(child)
+                    else:
+                        has_all = False
+                        break
+            if has_all:
+                # has all parts of multi-gene
+                # only add and consider further if complete
+                multi_genes_acc[multi_gene_acc] = parts_acc
+                if multi_gene_acc not in resistance_genes_acc:
+                    resistance_genes_acc.append(multi_gene_acc)
+
+
+        
+        ## collect resistances
+
+        resisted_drugs_acc = {}
+        resisted_drug_classes_acc = {}
+
+        for gene_acc in resistance_genes_acc:
+
+            # find potential resistances by
+            # checking edges to parent nodes
+            for child, parent, key in obo.out_edges(gene_acc, keys=True):
+
+                if key == 'confers_resistance_to_antibiotic':
+                    
+                    # print(f'• {get_name(child)} ⟶ {key} ⟶ {get_name(parent)}')
+                    if parent not in resisted_drugs_acc:
+                        resisted_drugs_acc[parent] = []
+                    if child in multi_genes_acc:
+                        resisted_drugs_acc[parent] += [get_name(child)+':'+('+'.join(sorted([get_name(acc) for acc in multi_genes_acc[child]])))]
+                    else:
                         resisted_drugs_acc[parent] += [get_name(child)]
 
-                    elif key == 'confers_resistance_to_drug_class':
+                elif key == 'confers_resistance_to_drug_class':
 
-                        if parent not in resisted_drug_classes_acc:
-                            resisted_drug_classes_acc[parent] = []
+                    if parent not in resisted_drug_classes_acc:
+                        resisted_drug_classes_acc[parent] = []
+                    if child in multi_genes_acc:
+                        resisted_drug_classes_acc[parent] += [get_name(child)+':'+('+'.join(sorted([get_name(acc) for acc in multi_genes_acc[child]])))]
+                    else:
                         resisted_drug_classes_acc[parent] += [get_name(child)]
 
 
-        # check for multiple component drugs
+
+        ## check for multiple component drugs
         multi_drugs_acc = []
         resisted_multi_drugs_acc = {}
 
@@ -151,7 +200,7 @@ else:
                     # resistant against all parts
                     if multi_drug_acc not in resisted_multi_drugs_acc:
                         resisted_multi_drugs_acc[multi_drug_acc] = []
-                    resisted_multi_drugs_acc[multi_drug_acc] += ['+'.join([get_name(part) for part in parts_acc])]
+                    resisted_multi_drugs_acc[multi_drug_acc] += ['+'.join([get_name(part)+('('+','.join(resisted_drugs_acc[part]))+')' for part in parts_acc])]
 
         # add
         for multi_drug_acc in resisted_multi_drugs_acc:
