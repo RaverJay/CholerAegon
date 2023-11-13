@@ -6,6 +6,7 @@ nextflow.enable.dsl=2
 
 
 // defaults, these are overridden by the 'nextflow run' invocation on the command line
+params.output = 'results_choleraegon'
 params.update_card = false
 params.fasta = false
 params.samples = false

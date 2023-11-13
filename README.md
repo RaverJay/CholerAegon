@@ -13,28 +13,30 @@ conda activate choleraegon
 
 Required parameters:
 * pick a release revision of this repository with `-r`, e.g. `-r 0.3.0`
-* pick your executor (local, slurm, etc) and engine (singularity) with `-profile`, e.g. `-profile local,singularity`
+* pick your executor (local, slurm, etc) and engine (singularity) with `-profile`, most likely `-profile local,singularity`
 * supply read data with `--samples`, `--longreads`, `--shortreads` or `--fasta`
 
 Optional parameters:
 * supply a genome reference with `--genome_reference` to get average nucleotide identity values for the assemblies
 * specify the output folder with `--output` (default `results_CholerAegon`)
+* add `--update_card` (or use stand-alone) to download the newest [CARD](https://card.mcmaster.ca/home) resistance database data
+* add `--output <folder>` to specify the output folder (default `results_choleraegon`)
 
 ## Examples
 
 * run on Nanopore reads (one .fq file per sample)
 ```
-nextflow run RaverJay/CholerAegon -r 0.2.0 -profile local,singularity \
+nextflow run RaverJay/CholerAegon -r 0.3.0 -profile local,singularity \
 --longreads 'sample_lr_*.fq' --genome_reference my_pathogen.fa --output results_lr
 ```
 * run on short paired-end reads (supply the filename pattern in quotes, with a '*' and '{1,2}')
 ```
-nextflow run RaverJay/CholerAegon -r 0.2.0 -profile local,singularity \
+nextflow run RaverJay/CholerAegon -r 0.3.0 -profile local,singularity \
 --shortreads 'sample_sr_ID*_{1,2}.fq' --genome_reference my_pathogen.fa --output results_sr
 ```
 * run hybrid assembly with both long and short reads
 ```
-nextflow run RaverJay/CholerAegon -r 0.2.0 -profile local,singularity \
+nextflow run RaverJay/CholerAegon -r 0.3.0 -profile local,singularity \
 --samples list_of_samples.csv --genome_reference my_pathogen.fa --output results_samples
 ```
 where `list_of_samples.csv` has the following structure:
@@ -46,10 +48,11 @@ sample2_name,s2_nanopore_reads.fq,s2_short_reads_pair1.fq.gz,s2_short_reads_pair
 ## Additional parameters
 
 ```
---genome_reference <reference>      optional: supply a genome reference for the analyzed pathogen, will produce %ANI values
---do_all_assemblies                 do not skip short-read-only and long-read-only assemblies in hybrid mode
---fasta <assembly/assemblies>       supply pre-assembled genomes for AMR detection only
---output <folder>                   specify output folder
+--fasta <assembly/assemblies>       supply pre-assembled genomes instead of read data, do only AMR detection
+--genome_reference <reference>      optionally supply a genome reference for the analyzed pathogen, will produce %ANI values for all assemblies
+--min_coverage_percent              specify minimum percentage of covered bases for an AMR gene to be considered present (default 80)
+--min_identity_percent              specify minimum percentage of identitical bases for an AMR gene to be considered present (default 80)
+--do_all_assemblies                 do not skip short-read-only and long-read-only assemblies in hybrid mode (default off)
 ```
 
 ## Pipeline overview
