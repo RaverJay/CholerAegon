@@ -96,13 +96,15 @@ process prepare_fasta {
     input:
         tuple val(name), path(fasta)
     output:
-        tuple val(name), path("fixed_names/${name}.fasta")
+        tuple val(name), val("pre-assembled"), path("fixed_names/${name}.fasta")
     shell:
         '''
-        mkdir fixed_name
+        mkdir fixed_names
         for F in *.fa *.fasta *.fna; do
         if [ -e "$F" ]; then
-        ln -s $F fixed_names/!{name}.fasta
+        ln -s ../$F fixed_names/!{name}.fasta
+        fi
+        done
         '''
 }
 
@@ -444,13 +446,20 @@ process summary_report {
 
     input:
         path(amr_results)
-        path(fastani_results)
+        file(fastani_results)
     output:
         path("CholerAegon_summary_report_*.html")
     script:
-        """
-        summary_report.py --amr_results ${amr_results} --fastani_results ${fastani_results}
-        """
+        if (params.genome_reference) {
+            """
+            summary_report.py --amr_results ${amr_results} --fastani_results ${fastani_results}
+            """
+        }
+        else {
+            """
+            summary_report.py --amr_results ${amr_results}
+            """
+        }
 }
 
 

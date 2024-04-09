@@ -358,6 +358,8 @@ class SummaryReport():
         self.predictiondataraw['Drug class resistances'] = data['DRUG_CLASS_RESISTANCES']
 
         def drugs_markup(str):
+            if str == '.':
+                return str
             drugs = str.split(';')
             drugs_f = []
             for d in drugs:
